@@ -1,5 +1,7 @@
 package bin2dec
 
-func main() {
+import "fmt"
 
+func main() {
+	fmt.Println("test")
 }
