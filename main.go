@@ -1,9 +1,12 @@
 package bin2dec
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
-		var binary string
+	var binary string
 	fmt.Print("Enter Binary Number:")
 	fmt.Scanln(&binary)
 	output, err := strconv.ParseInt(binary, 2, 64)
