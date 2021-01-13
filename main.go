@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
-	var binary string
+	var num string
 	fmt.Print("Enter Binary Number:")
-	fmt.Scanln(&binary)
-	output, err := strconv.ParseInt(binary, 2, 64)
+	fmt.Scanln(&num)
+	output, err := strconv.ParseInt(num, 2, 64)
 	if err != nil {
 		fmt.Println(err)
 		return
