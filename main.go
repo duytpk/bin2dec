@@ -1,11 +1,11 @@
-package bin2dec
+package main
 
 import (
 	"fmt"
 	"strconv"
 )
 
-func main() {
+func checknum() {
 	var num string
 	fmt.Print("Enter Binary Number:")
 	fmt.Scanln(&num)
@@ -14,6 +14,16 @@ func main() {
 		fmt.Println(err)
 		return
 	}
-
 	fmt.Printf("Output %d", output)
+}
+
+func main() {
+	fmt.Println("Press 1 to run")
+	fmt.Println("Press 2 to exit")
+	var input int
+	n, err := fmt.Scanln(&input)
+	if n < 1 || err != nil {
+		fmt.Println("invalid input")
+		return
+	}
 }
